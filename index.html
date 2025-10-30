@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>鶏とわたし</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* インデックスページ専用のナビゲーション非表示 */
+    .top-nav {
+      display: none;
+    }
+    
+    /* グリッド内のナビゲーションリンク用スタイル */
+    .grid-nav {
+      grid-column: 5 / 6;
+      grid-row: 4 / 6;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 15px;
+      gap: 6px;
+    }
+    
+    .grid-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9em;
+      line-height: 1.2;
+      display: block;
+    }
+    
+    .grid-nav a:hover {
+      color: #66a36d;
+    }
+    
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      .grid-nav {
+        grid-column: 1 / 3;
+        grid-row: auto;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 20px;
+      }
+      
+      .grid-nav a {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">鶏とわたし</h1>
+  </header>
+
+  <nav class="top-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">わたしについて</a>
+    <a href="farm.html">農場について</a>
+    <a href="livestock.html">家畜の飼育について</a>
+    <a href="eggs.html">たまごについて</a>
+    <a href="shop.html">ネットショップ</a>
+    <a href="store.html">たまごを買えるお店</a>
+  </nav>
+
+  <div class="grid">
+    <div class="grid-item big"><a href="about.html"><img src="images/about.jpeg" alt="about"></a></div>
+    <div class="grid-item"><a href="livestock.html"><img src="images/livestock1.jpg" alt="livestock1"></a></div>
+    <div class="grid-item"><a href="livestock.html"><img src="images/livestock2.jpg" alt="livestock2"></a></div>
+    <div class="grid-item"><a href="farm.html"><img src="images/farm.jpg" alt="farm"></a></div>
+    <div class="grid-item"><a href="eggs.html"><img src="images/egg1.jpg" alt="egg1"></a></div>
+    <div class="grid-item big"><a href="eggs.html"><img src="images/egg2.jpg" alt="egg2"></a></div>
+    <div class="grid-item"><a href="shop.html"><img src="images/netshop.jpg" alt="shop"></a></div>
+    <div class="grid-item"><a href="store.html"><img src="images/store.jpg" alt="store"></a></div>
+    <div class="grid-item big"><img src="images/contact.jpg" alt="contact"></div>
+    <div class="grid-nav">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">わたしについて</a>
+      <a href="farm.html">農場について</a>
+      <a href="livestock.html">家畜の飼育について</a>
+      <a href="eggs.html">たまごについて</a>
+      <a href="shop.html">ネットショップ</a>
+      <a href="store.html">たまごを買えるお店</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 鶏とわたし</p>
+  </footer>
+</body>
+</html>

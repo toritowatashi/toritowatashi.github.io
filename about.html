@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>わたしについて - 鶏とわたし</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ナビゲーション非表示 */
+    nav {
+      display: none;
+    }
+    
+    /* 右下のナビゲーション */
+    .bottom-nav {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #f5f5f5;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .bottom-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9em;
+      line-height: 1.2;
+      display: block;
+    }
+    
+    .bottom-nav a:hover {
+      color: #66a36d;
+    }
+    
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      .bottom-nav {
+        position: static;
+        margin: 20px auto;
+        max-width: 300px;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 20px;
+      }
+      
+      .bottom-nav a {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">鶏とわたし</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="about.html">わたしについて</a>
+    <a href="farm.html">農場について</a>
+    <a href="livestock.html">家畜の飼育について</a>
+    <a href="eggs.html">たまごについて</a>
+    <a href="shop.html">ネットショップ</a>
+    <a href="store.html">たまごを買えるお店</a>
+  </nav>
+
+  <div class="content">
+    <img src="images/about.jpeg" alt="わたしについて">
+    <p>
+      動物が好きなことや畜産学科で学んだことがキッカケとなり、養豚場に勤めたことから始まり、それ以降国内外で養豚の研修を重ね、山梨県にあるぶぅふぅうぅ農園で放牧養豚、平飼い養鶏のノウハウを学びました。
+鶏や豚の世話だけは飽きずに取り組みます。
+
+わたしの思い
+2021年に鶏を、2025年に豚を飼い始めました。計画的にというよりは流れに身を任せてきた面もありつつ、しかし長らく自分で家畜を飼えないかと模索もしてきました。
+自分で始めたかった理由として、自分に全責任がある家畜を飼いたかったこと、家畜の快適さを求める飼育をしたかったこと、平飼い養鶏、放牧養豚の経験があり、その経験を生かして日々過ごしたかったことなどがあります。
+
+家畜には野菜や穀物を食べ、日差しが気持ち良ければそれを浴び、好みの場所で砂浴びや泥浴びをしたりして好き勝手に過ごして欲しいと思っています。
+いろいろな方との繋がりのおかげで今の農場を使わせてもらえることになりました。できるだけ長く続けられるように励みたいと思っています。
+    </p>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">わたしについて</a>
+    <a href="farm.html">農場について</a>
+    <a href="livestock.html">家畜の飼育について</a>
+    <a href="eggs.html">たまごについて</a>
+    <a href="shop.html">ネットショップ</a>
+    <a href="store.html">たまごを買えるお店</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 鶏とわたし</p>
+  </footer>
+</body>
+</html>

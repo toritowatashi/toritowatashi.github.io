@@ -1,0 +1,168 @@
+/* 全体基本設定 */
+body {
+  margin: 0;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
+}
+
+header {
+  background: #f5f5f5;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #66a36d;
+  margin: 20px 0 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  color: #66a36d;
+}
+
+/* ====== トップページ（index.html）の画像グリッド ====== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.grid-item {
+  background: #ddd;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-item.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.catchcopy {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.2em;
+  color: #888;
+}
+
+/* ====== 通常の各ページ用コンテンツ設定 ====== */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ====== 画像が2枚あるページ用 横並びスタイル（正方形 or 比率保持対応） ====== */
+.image-pair-wrapper {
+  width: 540px;
+  margin: 0 auto 20px;
+  display: flex;
+}
+
+.image-pair-wrapper.square img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.image-pair-wrapper.auto img {
+  width: 270px;
+  height: auto;
+  display: block;
+}
+
+/* ====== フッター ====== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #f5f5f5;
+  margin-top: 30px;
+}
+
+/* ====== レスポンシブ対応 ====== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item.big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .site-title {
+    font-size: 2em;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  .catchcopy {
+    font-size: 1em;
+  }
+
+  .image-pair-wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .image-pair-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .content p {
+    max-width: 90%;
+  }
+
+  .content img {
+    max-width: 100%;
+  }
+}

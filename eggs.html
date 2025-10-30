@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>たまごについて - 鶏とわたし</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
+    }
+
+    /* ナビゲーション非表示 */
+    nav {
+      display: none;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .image-pair-wrapper {
+      width: 540px;
+      margin: 0 auto 20px;
+      display: flex;
+      gap: 8px; /* ← 画像の間に少しだけ隙間 */
+    }
+
+    .image-pair-wrapper img {
+      width: 266px;
+      height: auto;
+      display: block;
+    }
+
+    .content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+      text-align: left;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* 右下のナビゲーション */
+    .bottom-nav {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #f5f5f5;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .bottom-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9em;
+      line-height: 1.2;
+      display: block;
+    }
+    
+    .bottom-nav a:hover {
+      color: #66a36d;
+    }
+    
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      .bottom-nav {
+        position: static;
+        margin: 20px auto;
+        max-width: 300px;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 30px 20px;
+      }
+      
+      .bottom-nav a {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">鶏とわたし</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="about.html">わたしについて</a>
+    <a href="farm.html">農場について</a>
+    <a href="livestock.html">家畜の飼育について</a>
+    <a href="eggs.html">たまごについて</a>
+    <a href="shop.html">ネットショップ</a>
+    <a href="store.html">たまごを買えるお店</a>
+  </nav>
+
+  <div class="content">
+    <div class="image-pair-wrapper">
+      <img src="images/egg1.jpg" alt="たまご1">
+      <img src="images/egg2.jpg" alt="たまご2">
+    </div>
+    <p>
+      もみじ（赤玉）
+さくら（薄ピンクや白）
+アローカナ（青や緑）
+の3種の鶏を飼育しており、3色のたまごをランダムにパックに詰めて販売しています。
+たまごの見た目はよく見ればひとつひとつの形や色合い、手触りなどが違い、見ていて飽きません。
+また黄身の色も個体によって違います。緑餌を多く食べていれば黄身が濃い黄色になりますが、全体的に市販のたまごよりは黄身の色は薄くなります。
+殻の色の違いで味が違うかはわかりませんが、どの色のたまごも市販のたまごとは味は違います。特に感じるのは白身の味が濃いことです。黄身と白身が混ざっても黄身の味が薄まることなくたまごの味をしっかり味わえるので、まずはたまごかけごはんをオススメしています。加えてもし嫌でなければ、お醤油などの調味料を少なめ、もしくはまったくかけずに一口食べてみてほしいです。
+
+有精卵について
+鶏はいくつかの群れに分けて飼育していますが、各群れに数羽の雄鶏を入れています。これは雄鶏がいた方がいないより若干群れが落ち着くことや、交配が自由にできるようにするためです。
+
+商品に有精卵と表記するためには雌鶏100羽に対して雄鶏5羽以上の割合で自然交配できる環境にするという規定があり、その割合を満たしていない群れが大半なので、有精卵という表記はしません。
+ここの鶏が生むたまごの中には有精卵もあり、無精卵もあるというのが実際のところです。
+
+    </p>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html">ホーム</a>
+    <a href="about.html">わたしについて</a>
+    <a href="farm.html">農場について</a>
+    <a href="livestock.html">家畜の飼育について</a>
+    <a href="eggs.html">たまごについて</a>
+    <a href="shop.html">ネットショップ</a>
+    <a href="store.html">たまごを買えるお店</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 鶏とわたし</p>
+  </footer>
+</body>
+</html>
