@@ -20,21 +20,31 @@
       margin: 0 auto;
       padding: 20px;
     }
+
     .content img {
-      width: 100%;
-      max-width: 540px;
-      height: auto;
       display: block;
+      max-width: 540px;
       margin: 0 auto 20px;
+      width: 100%;
+      height: auto;
     }
-    .content p {
-      font-size: 1.1em;
-      line-height: 1.6;
+
+    .content h2 {
+      font-size: 1.4em;
       color: #333;
+      text-align: center;
+      margin: 30px auto 20px;
+      max-width: 450px;
+    }
+
+    .content p {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
       text-align: left;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
     }
 
     /* 右下のナビゲーション */
@@ -64,6 +74,26 @@
     
     /* レスポンシブ対応 */
     @media (max-width: 768px) {
+      .content img {
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      .content h2 {
+        font-size: 1.3em;
+        max-width: 380px;
+        margin: 25px auto 15px;
+      }
+
+      .content p {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px;
+      }
+
       .bottom-nav {
         position: static;
         margin: 20px auto;
@@ -84,7 +114,6 @@
   <header>
     <h1 class="site-title">鶏とわたし</h1>
   </header>
-
   <nav>
     <a href="index.html">ホーム</a>
     <a href="about.html">わたしについて</a>
@@ -94,16 +123,17 @@
     <a href="shop.html">ネットショップ</a>
     <a href="store.html">たまごを買えるお店</a>
   </nav>
-
   <div class="content">
     <img src="images/farm.jpg" alt="農場について">
-    <p>
-      宮城県登米市にある小高い山の上で以前養鶏場だった場所を使わせてもらっています。
-現在鶏100羽を飼育してします。
-2025年から親豚（オス1頭メス2頭）を飼い始めました。
-    </p>
-  </div>
 
+    <h2>農場について</h2>
+
+    <p>宮城県登米市にある小高い山の上で以前養鶏場だった場所を使わせてもらっています。</p>
+
+    <p>現在鶏100羽を飼育してします。</p>
+
+    <p>2025年から親豚（オス1頭メス2頭）を飼い始めました。</p>
+  </div>
   <div class="bottom-nav">
     <a href="index.html">ホーム</a>
     <a href="about.html">わたしについて</a>
@@ -113,7 +143,6 @@
     <a href="shop.html">ネットショップ</a>
     <a href="store.html">たまごを買えるお店</a>
   </div>
-
   <footer>
     <p>&copy; 2025 鶏とわたし</p>
   </footer>

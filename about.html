@@ -6,9 +6,53 @@
   <title>わたしについて - 鶏とわたし</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
+    body {
+      font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
+    }
+
     /* ナビゲーション非表示 */
     nav {
       display: none;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .content img {
+      display: block;
+      max-width: 540px;
+      margin: 0 auto 20px;
+      width: 100%;
+      height: auto;
+    }
+
+    .content h2 {
+      font-size: 1.4em;
+      color: #333;
+      text-align: center;
+      margin: 30px auto 20px;
+      max-width: 450px;
+    }
+
+    .content h3 {
+      font-size: 1.2em;
+      color: #444;
+      margin: 30px auto 15px;
+      max-width: 450px;
+      padding: 0 20px;
+    }
+
+    .content p {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
+      text-align: left;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
     }
     
     /* 右下のナビゲーション */
@@ -38,6 +82,33 @@
     
     /* レスポンシブ対応 */
     @media (max-width: 768px) {
+      .content img {
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      .content h2 {
+        font-size: 1.3em;
+        max-width: 380px;
+        margin: 25px auto 15px;
+      }
+
+      .content h3 {
+        font-size: 1.15em;
+        max-width: 380px;
+        margin: 25px auto 12px;
+        padding: 0 20px;
+      }
+
+      .content p {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px;
+      }
+
       .bottom-nav {
         position: static;
         margin: 20px auto;
@@ -58,7 +129,6 @@
   <header>
     <h1 class="site-title">鶏とわたし</h1>
   </header>
-
   <nav>
     <a href="index.html">ホーム</a>
     <a href="about.html">わたしについて</a>
@@ -68,22 +138,25 @@
     <a href="shop.html">ネットショップ</a>
     <a href="store.html">たまごを買えるお店</a>
   </nav>
-
   <div class="content">
     <img src="images/about.jpeg" alt="わたしについて">
-    <p>
-      動物が好きなことや畜産学科で学んだことがキッカケとなり、養豚場に勤めたことから始まり、それ以降国内外で養豚の研修を重ね、山梨県にあるぶぅふぅうぅ農園で放牧養豚、平飼い養鶏のノウハウを学びました。
-鶏や豚の世話だけは飽きずに取り組みます。
 
-わたしの思い
-2021年に鶏を、2025年に豚を飼い始めました。計画的にというよりは流れに身を任せてきた面もありつつ、しかし長らく自分で家畜を飼えないかと模索もしてきました。
-自分で始めたかった理由として、自分に全責任がある家畜を飼いたかったこと、家畜の快適さを求める飼育をしたかったこと、平飼い養鶏、放牧養豚の経験があり、その経験を生かして日々過ごしたかったことなどがあります。
+    <h3>わたしについて</h3>
 
-家畜には野菜や穀物を食べ、日差しが気持ち良ければそれを浴び、好みの場所で砂浴びや泥浴びをしたりして好き勝手に過ごして欲しいと思っています。
-いろいろな方との繋がりのおかげで今の農場を使わせてもらえることになりました。できるだけ長く続けられるように励みたいと思っています。
-    </p>
+    <p>動物が好きなことや畜産学科で学んだことがキッカケとなり、養豚場に勤めたことから始まり、それ以降国内外で養豚の研修を重ね、山梨県にあるぶぅふぅうぅ農園で放牧養豚、平飼い養鶏のノウハウを学びました。</p>
+
+    <p>鶏や豚の世話だけは飽きずに取り組みます。</p>
+
+    <h3>わたしの思い</h3>
+
+    <p>2021年に鶏を、2025年に豚を飼い始めました。計画的にというよりは流れに身を任せてきた面もありつつ、しかし長らく自分で家畜を飼えないかと模索もしてきました。</p>
+
+    <p>自分で始めたかった理由として、自分自身の責任で家畜を飼いたかったこと、家畜の快適さを求める飼育をしたかったこと、平飼い養鶏、放牧養豚の経験があり、その経験を生かして日々過ごしたかったことなどがあります。</p>
+
+    <p>家畜には野菜や穀物を食べ、日差しが気持ち良ければそれを浴び、好みの場所で砂浴びや泥浴びをしたりして好き勝手に過ごして欲しいと思っています。</p>
+
+    <p>いろいろな方との繋がりのおかげで今の農場を使わせてもらえることになりました。できるだけ長く続けられるように励みたいと思っています。</p>
   </div>
-
   <div class="bottom-nav">
     <a href="index.html">ホーム</a>
     <a href="about.html">わたしについて</a>
@@ -93,7 +166,6 @@
     <a href="shop.html">ネットショップ</a>
     <a href="store.html">たまごを買えるお店</a>
   </div>
-
   <footer>
     <p>&copy; 2025 鶏とわたし</p>
   </footer>

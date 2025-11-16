@@ -35,14 +35,44 @@
       display: block;
     }
 
-    .content p {
-      font-size: 1.1em;
-      line-height: 1.6;
+    .content h2 {
+      font-size: 1.4em;
       color: #333;
+      text-align: center;
+      margin: 30px auto 20px;
+      max-width: 450px;
+    }
+
+    .content h3 {
+      font-size: 1.2em;
+      color: #444;
+      margin: 30px auto 15px;
+      max-width: 450px;
+      padding: 0 20px;
+    }
+
+    .content p {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
       text-align: left;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+
+    .content ul {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px 0 40px;
+      list-style-type: disc;
+    }
+
+    .content ul li {
+      margin-bottom: 0.5em;
     }
 
     /* 右下のナビゲーション */
@@ -72,6 +102,52 @@
     
     /* レスポンシブ対応 */
     @media (max-width: 768px) {
+      .image-pair-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      
+      .image-pair-wrapper img {
+        flex: 1;
+        max-width: 50%;
+        height: auto;
+        min-height: 150px;
+        object-fit: cover;
+      }
+
+      .content h2 {
+        font-size: 1.3em;
+        max-width: 380px;
+        margin: 25px auto 15px;
+      }
+
+      .content h3 {
+        font-size: 1.15em;
+        max-width: 380px;
+        margin: 25px auto 12px;
+        padding: 0 20px;
+      }
+      
+      .content p {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px;
+      }
+
+      .content ul {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px 0 40px;
+      }
+      
       .bottom-nav {
         position: static;
         margin: 20px auto;
@@ -108,30 +184,32 @@
       <img src="images/livestock1.jpg" alt="家畜1">
       <img src="images/livestock2.jpg" alt="家畜2">
     </div>
-    <p>
-      動物福祉の理念として提唱されている【5つの自由】を念頭に飼育することを心がけています。
 
-飢え、渇きからの自由
-不快からの自由
-痛み、負傷、病気からの自由
-本来の行動がとれる自由
-恐怖、抑圧からの自由
+    <h2>家畜の飼育について</h2>
 
-また日々それぞれの家畜の特性を観察し、それを快適さにつなげて鶏や豚がのびのびと過ごせるように世話をしていきたいと思っています。
-家畜の生活の質の向上が生産物の質の向上につながると考えています。
+    <p>動物福祉の理念として提唱されている【5つの自由】を念頭に飼育することを心がけています。</p>
 
-にわとり
-少数飼育で各々の鶏が羽ばたきや砂浴び、座って休むなど好きなときにやりたいことが充分できる広さの中で飼育をしています。
+    <ul>
+      <li>飢え、渇きからの自由</li>
+      <li>不快からの自由</li>
+      <li>痛み、負傷、病気からの自由</li>
+      <li>本来の行動がとれる自由</li>
+      <li>恐怖、抑圧からの自由</li>
+    </ul>
 
-ぶた
-土に存分に触れられる環境で飼育しています。母豚の妊娠ストールは使用せず、分娩ストールは検討中です。
-肥育豚は兄弟で1つの群れとして過ごすので群れを混ぜた際のけんかや序列争いはありません。
+    <p>また日々それぞれの家畜の特性を観察し、それを快適さにつなげて鶏や豚がのびのびと過ごせるように世話をしていきたいと思っています。</p>
 
-エサ
-登米市近郊で作られた米や麦、おから、ホエイ、しょうゆかすなどを混ぜたものを与え、野菜や緑餌も毎日あげています。飲み水は近くの地下水を汲んで与えています。
+    <p>家畜の生活の質の向上が生産物の質の向上につながると考えています。</p>
 
+    <h3>にわとり</h3>
+    <p>少数飼育で各々の鶏が羽ばたきや砂浴び、座って休むなど好きなときにやりたいことが充分できる広さの中で飼育をしています。</p>
 
-    </p>
+    <h3>ぶた</h3>
+    <p>土に存分に触れられる環境で飼育しています。母豚の妊娠ストールは使用せず、分娩ストールは検討中です。</p>
+    <p>育つ過程において、兄弟を1つのグループとして過ごすので、群れを混ぜた際のけんかや序列争いはありません。</p>
+
+    <h3>エサ</h3>
+    <p>家畜が日々食べるエサは、入っているものがはっきりとわかることがとても大切なことだと思っています。また、周辺の地域から手に入るものをできるだけ使うようにしています。具体的には登米市近郊で作られた米や麦、おから、ホエイ、しょうゆかすなどを混ぜたものを与え、野菜や緑餌も毎日あげています。飲み水は近くの地下水を汲んで与えています。</p>
   </div>
 
   <div class="bottom-nav">

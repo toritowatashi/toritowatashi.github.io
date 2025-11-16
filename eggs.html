@@ -25,23 +25,54 @@
       width: 540px;
       margin: 0 auto 20px;
       display: flex;
-      gap: 8px; /* ← 画像の間に少しだけ隙間 */
+      gap: 8px;
     }
 
     .image-pair-wrapper img {
       width: 266px;
-      height: auto;
+      height: 200px;
+      object-fit: cover;
       display: block;
     }
 
-    .content p {
-      font-size: 1.1em;
-      line-height: 1.6;
+    .content h2 {
+      font-size: 1.4em;
       color: #333;
+      text-align: center;
+      margin: 30px auto 20px;
+      max-width: 450px;
+    }
+
+    .content h3 {
+      font-size: 1.2em;
+      color: #444;
+      margin: 30px auto 15px;
+      max-width: 450px;
+      padding: 0 20px;
+    }
+
+    .content p {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
       text-align: left;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px;
+    }
+
+    .content ul {
+      font-size: 1.05em;
+      line-height: 1.9;
+      color: #444;
+      max-width: 450px;
+      margin: 0 auto 1.5em;
+      padding: 0 20px 0 40px;
+      list-style-type: disc;
+    }
+
+    .content ul li {
+      margin-bottom: 0.5em;
     }
 
     /* 右下のナビゲーション */
@@ -71,6 +102,52 @@
     
     /* レスポンシブ対応 */
     @media (max-width: 768px) {
+      .image-pair-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      
+      .image-pair-wrapper img {
+        flex: 1;
+        max-width: 50%;
+        height: auto;
+        min-height: 150px;
+        object-fit: cover;
+      }
+
+      .content h2 {
+        font-size: 1.3em;
+        max-width: 380px;
+        margin: 25px auto 15px;
+      }
+
+      .content h3 {
+        font-size: 1.15em;
+        max-width: 380px;
+        margin: 25px auto 12px;
+        padding: 0 20px;
+      }
+      
+      .content p {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px;
+      }
+
+      .content ul {
+        max-width: 380px;
+        font-size: 0.95em;
+        line-height: 1.9;
+        margin: 0 auto 1.5em;
+        padding: 0 20px 0 40px;
+      }
+      
       .bottom-nav {
         position: static;
         margin: 20px auto;
@@ -107,22 +184,30 @@
       <img src="images/egg1.jpg" alt="たまご1">
       <img src="images/egg2.jpg" alt="たまご2">
     </div>
-    <p>
-      もみじ（赤玉）
-さくら（薄ピンクや白）
-アローカナ（青や緑）
-の3種の鶏を飼育しており、3色のたまごをランダムにパックに詰めて販売しています。
-たまごの見た目はよく見ればひとつひとつの形や色合い、手触りなどが違い、見ていて飽きません。
-また黄身の色も個体によって違います。緑餌を多く食べていれば黄身が濃い黄色になりますが、全体的に市販のたまごよりは黄身の色は薄くなります。
-殻の色の違いで味が違うかはわかりませんが、どの色のたまごも市販のたまごとは味は違います。特に感じるのは白身の味が濃いことです。黄身と白身が混ざっても黄身の味が薄まることなくたまごの味をしっかり味わえるので、まずはたまごかけごはんをオススメしています。加えてもし嫌でなければ、お醤油などの調味料を少なめ、もしくはまったくかけずに一口食べてみてほしいです。
 
-有精卵について
-鶏はいくつかの群れに分けて飼育していますが、各群れに数羽の雄鶏を入れています。これは雄鶏がいた方がいないより若干群れが落ち着くことや、交配が自由にできるようにするためです。
+    <h3>たまごについて</h3>
 
-商品に有精卵と表記するためには雌鶏100羽に対して雄鶏5羽以上の割合で自然交配できる環境にするという規定があり、その割合を満たしていない群れが大半なので、有精卵という表記はしません。
-ここの鶏が生むたまごの中には有精卵もあり、無精卵もあるというのが実際のところです。
+    <ul>
+      <li>もみじ（赤玉）</li>
+      <li>さくら（薄ピンクや白）</li>
+      <li>アローカナ（青や緑）</li>
+    </ul>
 
-    </p>
+    <p>の3種の鶏を飼育しており、3色のたまごをランダムにパックに詰めて販売しています。</p>
+
+    <p>たまごの見た目はよく見ればひとつひとつの形や色合い、手触りなどが違い、見ていて飽きません。</p>
+
+    <p>また黄身の色も個体によって違います。緑餌を多く食べていれば黄身が濃い黄色になりますが、鶏とわたしのたまごの多くは市販のたまごよりは黄身の色は薄くなります。</p>
+
+    <p>殻の色の違いで味が違うかはわかりませんが、どの色のたまごも市販のたまごとは味は違います。特に感じるのは白身の味が濃いことです。黄身と白身が混ざっても黄身の味が薄まることなくたまごの味をしっかり味わえるので、まずはたまごかけごはんをオススメしています。加えてもし嫌でなければ、お醤油などの調味料を少なめ、もしくはまったくかけずに一口食べてみてほしいです。</p>
+
+    <h3>有精卵について</h3>
+
+    <p>鶏はいくつかの群れに分けて飼育していますが、各群れに数羽の雄鶏を入れています。これは雄鶏がいた方がいないより若干群れが落ち着くことや、交配が自由にできるようにするためです。</p>
+
+    <p>商品に有精卵と表記するためには雌鶏100羽に対して雄鶏5羽以上の割合で自然交配できる環境にするという規定があり、その割合を満たしていない群れが大半なので、有精卵という表記はしません。</p>
+
+    <p>ここの鶏が生むたまごの中には有精卵もあり、無精卵もあるというのが実際のところです。</p>
   </div>
 
   <div class="bottom-nav">
