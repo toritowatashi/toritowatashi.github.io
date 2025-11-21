@@ -68,7 +68,7 @@ nav a:hover {
   color: #888;
 }
 
-/* ====== 通常の各ページ用コンテンツ設定 ====== */
+/* ====== 通常ページ用コンテンツ ====== */
 .content {
   max-width: 800px;
   margin: 0 auto;
@@ -93,7 +93,7 @@ nav a:hover {
   margin-right: auto;
 }
 
-/* ====== 画像が2枚あるページ用 横並びスタイル（正方形 or 比率保持対応） ====== */
+/* ====== 画像が2枚あるページ ====== */
 .image-pair-wrapper {
   width: 540px;
   margin: 0 auto 20px;
@@ -120,15 +120,30 @@ footer {
   margin-top: 30px;
 }
 
-/* ====== レスポンシブ対応 ====== */
+/* =========================================================
+   ====== レスポンシブ対応（スマホ） =======================
+   ========================================================= */
 @media (max-width: 768px) {
+
+  /* グリッドを 2列に */
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
-  .grid-item.big {
-    grid-column: span 2;
-    grid-row: span 2;
+  /* ★★★ モバイル時：画像を少し小さくして余白を作る（角は丸くしない） ★★★ */
+  .grid-item img {
+    width: 90% !important;
+    height: 90% !important;
+    object-fit: cover;
+    margin: 5% auto !important;
+    display: block;
+  }
+
+  .grid-item.big img {
+    width: 92% !important;
+    height: 92% !important;
+    margin: 4% auto !important;
   }
 
   nav {
