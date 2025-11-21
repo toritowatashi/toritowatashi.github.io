@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .grid-item {
-  background: #ddd;
+  background: transparent; /* ← ★ 修正：灰色背景を消す */
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
@@ -131,7 +131,7 @@ footer {
     gap: 10px;
   }
 
-  /* ★★★ モバイル時：画像を少し小さくして余白を作る（角は丸くしない） ★★★ */
+  /* ★ モバイル版でも灰色は出ない（背景なし） */
   .grid-item img {
     width: 90% !important;
     height: 90% !important;
