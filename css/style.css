@@ -26,9 +26,9 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #333;
-  padding: 10px 15px;
-  font-size: 1.1em;
+ 	color: #333;
+ 	padding: 10px 15px;
+ 	font-size: 1.1em;
 }
 
 nav a:hover {
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .grid-item {
-  background: transparent; /* ← ★ 修正：灰色背景を消す */
+  background: #ddd;   /* ← PC版は灰色のまま */
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
@@ -125,13 +125,18 @@ footer {
    ========================================================= */
 @media (max-width: 768px) {
 
-  /* グリッドを 2列に */
+  /* グリッドを2列に */
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
-  /* ★ モバイル版でも灰色は出ない（背景なし） */
+  /* スマホ版だけ背景を透明にする（枠消し） */
+  .grid-item {
+    background: transparent !important;
+  }
+
+  /* スマホ版：画像を少し小さくする */
   .grid-item img {
     width: 90% !important;
     height: 90% !important;
