@@ -207,4 +207,7 @@ footer {
   .content img {
     max-width: 100%;
   }
+  .store-name {
+  font-size: 0.95em;
+　}
 }
